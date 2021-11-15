@@ -1,0 +1,23 @@
+{
+  "name": "sprint.api-solo-project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "TakahiroKurata",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js",
+    "makeMigrate": "knex migrate:make --knexfile knex.js",
+    "migrate": "knex migrate:latest --knexfile knex.js",
+    "rollback": "knex migrate:rollback --knexfile knex.js",
+    "seed": "knex seed:run"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "knex": "^0.21.17",
+    "pg": "^8.7.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
